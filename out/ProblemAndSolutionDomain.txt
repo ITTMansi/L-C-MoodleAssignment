@@ -1,12 +1,27 @@
-Problem Domain:             Solution Domain:
+Problem Domain:
 
-show Report                  is report created
-close Report                 is report shown
-Select User as Admin         is user login
-submit Report data            save response and validate
-signup                      show error if account does'nt exist
-select multiple report      sendAndVerifyPublicCreditReportCreationRequest
-Select User Credential       remove report
-component                   fetch xml(reponse)
-enable api call for Report   user settings
-component                   content snippet(component which renders at server side)
+userclicksonTRVreportinLoanView
+userSelectsTheTranscriptIfPresentinLoanView
+userFillsThePrimaryApplicantIfPresentinLoanView
+UserSelectsTheRequestTypeIfPresentinLoanView
+userOrdersAHalcyonReportinLoanView
+UserOrdersReportifUploadedDocumentisPresentinLoanView
+userLogsIntoCreditQuickService
+userLogsIntoAdvantageCredit
+cueSuperUserLogsIntoPartnersCredit
+handleProductionEnvironment
+loginWithAlternateCredentials
+
+
+Solution Domain:
+
+clickOnDashboardMenu
+clickForMoreInformation
+closeMoreInformationFrame
+verifyInformation
+ClickProfileEmailTextField
+ClickSaveChangesButton
+ClickTempPswSubmitButton
+ClickPartnersTopRightUserName
+checkExecutionProfile
+openBrowserAndNavigateToWebsite

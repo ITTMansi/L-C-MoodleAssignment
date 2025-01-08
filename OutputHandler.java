@@ -1,11 +1,13 @@
 import java.util.List;
 
 class OutputHandler {
-    public static void displayCountryFullName(String countryCode, String countryFullName) {
-        if (countryFullName != null) {
-            System.out.println("The full name of the country for " + countryCode + " is: " + countryFullName);
+    public static void displayCountryFullName(String countryCode, List<String> adjacentCountries) {
+        if (adjacentCountries == null) {
+            System.out.println("Invalid country code or no data available.");
+        } else if (adjacentCountries.isEmpty()) {
+            System.out.println("The country " + countryCode + " has no adjacent countries.");
         } else {
-            System.out.println("No data available for the given country code or invalid code entered.");
+            System.out.println("Adjacent countries for " + countryCode + ": " + String.join(", ", adjacentCountries));
         }
     }
 }
